@@ -35,7 +35,7 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full overflow-hidden bg-blue-500  text-white py-8 px-4">
+    <div className="relative w-full overflow-hidden bg-blue-500  text-white py-8 px-4 z-0">
       <Button
         onClick={prevSlide}
         variant="ghost"
