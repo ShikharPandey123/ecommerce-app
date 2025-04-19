@@ -39,5 +39,4 @@ const CategoryBar = () => {
     </div>
   );
 };
-
 export default CategoryBar;

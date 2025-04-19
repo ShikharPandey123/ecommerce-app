@@ -1,4 +1,3 @@
-// App.js or pages/index.js
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import HeroCarousel from "./components/HeroCarousel";
