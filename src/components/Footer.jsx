@@ -11,7 +11,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-500 text-white px-2 py-10 text-sm">
+    <footer className="bg-gradient-to-r from-yellow-400 to-red-700  text-white px-2 py-10 text-sm">
       <div className="max-w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         <div>
           <h4 className="font-semibold mb-3 border-b border-white w-fit">

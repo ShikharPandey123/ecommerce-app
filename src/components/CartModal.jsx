@@ -28,7 +28,7 @@ const CartModal = ({ isOpen, onClose }) => {
               <button onClick={() => dispatch(removeFromCart(item.id))}>🗑</button>
             </div>
           ))}
-          <p className="text-right font-bold">Total: ₹{total}</p>
+          <p className="text-right font-bold">Total: ${total}</p>
         </div>
       )}
     </Modal>
