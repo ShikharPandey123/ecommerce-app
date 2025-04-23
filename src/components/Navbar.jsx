@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart, Heart, User } from "lucide-react";
 import { useSelector } from "react-redux";
-import WishlistModal from "./WishlistModal";
+import WishlistModal from "./temp";
 import CartModal from "./CartModal";
 
 const products = [
