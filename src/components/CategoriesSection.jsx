@@ -9,7 +9,7 @@ const categories = [
     items: [
       { id: 1, name: "Men’s Casual Shoes", offer: "Min. 70% Off", price: 999, image: "./casual-shoes.jpeg" },
       { id: 2, name: "Men’s Slippers & Flip Flops", offer: "Min. 70% Off", price: 499, image: "./flip-flops.jpeg" },
-      { id: 3, name: "Backpacks", offer: "Min. 70% Off", price: 1499, image: "bag.jpeg" },
+      { id: 3, name: "Backpacks", offer: "Min. 70% Off", price: 1499, image: "./bag.jpeg" },
       { id: 4, name: "Suitcases", offer: "Min. 70% Off", price: 2999, image: "./suitcase.jpeg" },
     ],
   },
