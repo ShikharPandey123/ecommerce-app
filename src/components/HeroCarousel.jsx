@@ -4,31 +4,19 @@ import { Button } from "@/components/ui/button";
 
 const banners = [
   {
-    img: "/drink1.jpg",
+    img: "/bed.png",
     title: "Beds",
     price: "From ₹8,999",
     brands: "Wooden Street, Sleepyhead & more",
   },
   {
-    img: "/drink2.jpg",
+    img: "/sofa.png",
     title: "Sofas",
     price: "From ₹12,499",
     brands: "Wakefit, Urban Ladder & more",
   },
   {
-    img: "/drink3.jpg",
-    title: "Chairs",
-    price: "From ₹999",
-    brands: "Nilkamal, GreenSoul & more",
-  },
-  {
-    img: "/drink4.jpg",
-    title: "Chairs",
-    price: "From ₹999",
-    brands: "Nilkamal, GreenSoul & more",
-  },
-  {
-    img: "/drink5.jpg",
+    img: "/chair.png",
     title: "Chairs",
     price: "From ₹999",
     brands: "Nilkamal, GreenSoul & more",
@@ -47,7 +35,7 @@ export default function HeroCarousel() {
   };
 
   return (
-    <div className="relative w-full overflow-hidden bg-gradient-to-r from-yellow-400 to-red-700 text-white py-8 px-4 z-0">
+    <div className="relative w-full overflow-hidden bg-gradient-to-r from-blue-400 to-red-700 text-white py-8 px-4 z-0">
       <Button
         onClick={prevSlide}
         variant="ghost"

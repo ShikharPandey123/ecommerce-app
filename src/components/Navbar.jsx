@@ -7,18 +7,17 @@ import WishlistModal from "./WishlistModal";
 import CartModal from "./CartModal";
 
 const products = [
-  "Mango Smoothie",
-  "Orange Juice",
-  "Apple Cider",
-  "Mixed Berry Shake",
-  "Watermelon Juice",
-  "Pineapple Punch",
-  "Grape Cooler",
-  "Strawberry Lemonade",
-  "Coconut Water",
-  "Litchi Crush",
+  "iPhone 15 Pro",
+  "Samsung Galaxy S24",
+  "Wireless Earbuds",
+  "Bluetooth Speaker",
+  "Laptop Stand",
+  "Mechanical Keyboard",
+  "LED Monitor",
+  "Gaming Mouse",
+  "Fitness Tracker",
+  "Smartwatch",
 ];
-
 
 export function Navbar() {
   const [query, setQuery] = useState("");
@@ -50,14 +49,14 @@ export function Navbar() {
   return (
     <nav className="flex items-center justify-between px-4 md:px-6 py-4 shadow-sm bg-white sticky top-0 z-50 flex-wrap gap-4">
       <div className="text-2xl font-bold">
-        <span className="text-yellow-600">My </span>
-        <span className="text-red-600">Fruit Drink Shop</span>
+        <span className="text-green-600">My </span>
+        <span className="text-black">Shop</span>
       </div>
 
       <div className="relative flex items-center flex-grow max-w-xl gap-2 w-full md:w-auto">
         <div className="w-full relative">
           <Input
-            placeholder="Search Drinks"
+            placeholder="Search Products"
             value={query}
             onChange={handleChange}
             className="w-full"
@@ -76,7 +75,7 @@ export function Navbar() {
             </ul>
           )}
         </div>
-        <Button onClick={handleSubmit} className="px-4 py-2 text-white bg-red-500 rounded">
+        <Button onClick={handleSubmit} className="px-4 py-2 text-white bg-blue-600 rounded">
           Search
         </Button>
       </div>
@@ -87,9 +86,9 @@ export function Navbar() {
             className="cursor-pointer w-6 h-6"
             onClick={() => setShowWishlistModal(true)}
           />
-          {wishlist.length > 0 && (
+          {wishlist.items.length > 0 && (
             <span className="absolute -top-2 -right-2 bg-pink-500 text-white rounded-full text-xs px-1">
-              {wishlist.length}
+              {wishlist.items.length}
             </span>
           )}
         </div>
@@ -99,20 +98,21 @@ export function Navbar() {
             className="cursor-pointer w-6 h-6"
             onClick={() => setShowCartModal(true)}
           />
-          {cart.length > 0 && (
+          {cart.items.length > 0 && (
             <span className="absolute -top-2 -right-2 bg-blue-500 text-white rounded-full text-xs px-1">
-              {cart.length}
+              {cart.items.length}
             </span>
           )}
         </div>
 
         <User className="cursor-pointer w-6 h-6" />
       </div>
-
       {showWishlistModal && (
         <WishlistModal isOpen={showWishlistModal} onClose={() => setShowWishlistModal(false)} />
       )}
-      {showCartModal && <CartModal isOpen={showCartModal} onClose={() => setShowCartModal(false)} />}
+      {showCartModal && (
+        <CartModal isOpen={showCartModal} onClose={() => setShowCartModal(false)} />
+      )}
     </nav>
   );
 }
