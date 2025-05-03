@@ -1,12 +1,23 @@
-# React + Vite
+# E-commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a responsive and dynamic e-commerce web application built with **React**, **Redux**, and **Tailwind CSS**. The application provides a seamless shopping experience with product browsing, cart management, and user interaction features.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the deployed app here: [E-commerce App on Vercel](https://ecommerce-app-ten-iota-66.vercel.app/)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Frontend library for building user interfaces
+- **Redux** – State management for predictable data flow
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **Vercel** – Deployment platform
+
+## ✨ Features
+
+- Browse and view products
+- Add products to cart
+- Manage cart items (add/remove/update quantities)
+- Responsive design for mobile, tablet, and desktop
+- Clean and modern UI with Tailwind CSS
+- State management with Redux for cart functionality
